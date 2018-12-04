@@ -1,0 +1,2 @@
+def find_second(a,b):
+    return a.find(b,a.find(b)+1)

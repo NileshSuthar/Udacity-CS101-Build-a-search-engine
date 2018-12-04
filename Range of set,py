@@ -1,0 +1,19 @@
+def set_range(a,b,c):
+    # Your code here
+    def big(a,b):
+        if(a>b):
+            return a
+        elif (a<b):
+            return b
+        elif(a==b):
+            return a
+    maxm = big(big(a,b),c)
+    def small(a,b):
+        if(a>b):
+            return b
+        elif (a<b):
+            return a
+        elif(a==b):
+            return a
+    minm = small(small(a,b),c)
+    return maxm-minm
